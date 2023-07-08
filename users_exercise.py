@@ -57,13 +57,15 @@ users = {
 # 1. Get Jonathan's Twitter handle (i.e. the string `"jonnyt"`)
 jonathans_twitter_handle = users["Jonathan"]["twitter"]
 print(jonathans_twitter_handle)
-print(users["Jonathan"]["twitter"])
+
 # 2. Get Erik's hometown
 eriks_hometown = users["Erik"]["home_town"]
 print(eriks_hometown)
+
 # 3. Get the list of Erik's lottery numbers
 eriks_lottery_numbers = users["Erik"]["lottery_numbers"]
 print(eriks_lottery_numbers)
+
 # 4. Get the species of Avril's pet Monty
 avrils_pet_species = users["Avril"]["pets"][0]["species"]
 print(avrils_pet_species)
@@ -82,11 +84,22 @@ print(avrils_even_lotto)
 # 7. Erik is one lottery number short! Add the number `7` to be included in his lottery numbers
 users["Erik"]["lottery_numbers"].append(7)
 print(users["Erik"]["lottery_numbers"])
+
 # 8. Change Erik's hometown to Edinburgh
 users["Erik"]["home_town"] = "Edinburgh"
 print(users["Erik"]["home_town"])
+
 # 9. Add a pet dog to Erik called "fluffy"
 users["Erik"]["pets"].append({"name": "fluffy", "species": "dog"})
 print(users["Erik"]["pets"])
-# 10. Add another person to the users dictionary
 
+# 10. Add another person to the users dictionary
+users["Tommy"] = {
+  "twitter": "tommyg",
+  "lottery_numbers": [3, 6, 7, 9, 13, 19,],
+  "pets": [{
+    "name": "Gretel",
+    "species":"cat"
+  }]
+}
+print(users["Tommy"])
