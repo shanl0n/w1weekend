@@ -55,22 +55,30 @@ users = {
 }
 
 # 1. Get Jonathan's Twitter handle (i.e. the string `"jonnyt"`)
-Jonathans_twitter_handle = users["Jonathan"]["twitter"]
-print(Jonathans_twitter_handle)
+jonathans_twitter_handle = users["Jonathan"]["twitter"]
+print(jonathans_twitter_handle)
 print(users["Jonathan"]["twitter"])
 # 2. Get Erik's hometown
-Eriks_hometown = users["Erik"]["home_town"]
-print(Eriks_hometown)
+eriks_hometown = users["Erik"]["home_town"]
+print(eriks_hometown)
 # 3. Get the list of Erik's lottery numbers
-Eriks_lottery_numbers = users["Erik"]["lottery_numbers"]
-print(Eriks_lottery_numbers)
+eriks_lottery_numbers = users["Erik"]["lottery_numbers"]
+print(eriks_lottery_numbers)
 # 4. Get the species of Avril's pet Monty
 avrils_pet_species = users["Avril"]["pets"][0]["species"]
 print(avrils_pet_species)
+
 # 5. Get the smallest of Erik's lottery numbers
 smallest_number = min(users["Erik"]["lottery_numbers"])
 print(smallest_number)
+
 # 6. Return an list of Avril's lottery numbers that are even
+avrils_even_lotto = []
+for number in users["Avril"]["lottery_numbers"]:
+    if number %2 == 0:
+      avrils_even_lotto.append(number)
+print(avrils_even_lotto)
+
 # 7. Erik is one lottery number short! Add the number `7` to be included in his lottery numbers
 # 8. Change Erik's hometown to Edinburgh
 # 9. Add a pet dog to Erik called "fluffy"
