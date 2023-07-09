@@ -8,13 +8,19 @@ for number in numbers:
     if number %2 == 0:
         even_numbers.append(number)
 print(even_numbers)
+
 # 2. Print the difference between the largest and smallest value:
 largest_number = max(numbers)
 smallest_number = min(numbers)
 print(largest_number - smallest_number)
 
 # 3. Print True if the list contains a 2 next to a 2 somewhere.
-
+def has_two_neighbours(numbers):
+    for i in range(len(numbers)):
+        if numbers[i] == numbers[i+1] == 2:
+            return True
+    return False
+print(has_two_neighbours(numbers))
 
 # 4. Print the sum of the numbers, 
 #    BUT ignore any section of numbers starting with a 6 and extending to the next 7.
