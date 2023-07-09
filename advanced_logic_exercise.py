@@ -9,7 +9,9 @@ for number in numbers:
         even_numbers.append(number)
 print(even_numbers)
 # 2. Print the difference between the largest and smallest value:
-
+largest_number = max(numbers)
+smallest_number = min(numbers)
+print(largest_number - smallest_number)
 
 # 3. Print True if the list contains a 2 next to a 2 somewhere.
 
